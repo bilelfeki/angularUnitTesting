@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularUnitTesting';
+  isOn = true ; 
+
+  clicked():void{
+    this.isOn = ! this.isOn
+  }
+  get message():string{
+    return `${this.isOn}`
+  }
 }
